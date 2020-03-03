@@ -1,0 +1,63 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/listing/listing"
+		},
+		{
+			"path": "pages/massage/massage"
+		},
+		{
+			"path": "pages/mycart/mycart"
+		},
+		{
+			"path": "pages/user/user"
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/t11.png",
+				"selectedIconPath": "static/tabbar/t11-hover.png"
+			},
+			{
+				"pagePath": "pages/listing/listing",
+				"text": "分类",
+				"iconPath": "static/tabbar/t19.png",
+				"selectedIconPath": "static/tabbar/t19-hover.png"
+			},
+			{
+				"pagePath": "pages/massage/massage",
+				"text": "消息",
+				"iconPath": "static/tabbar/t20.png",
+				"selectedIconPath": "static/tabbar/t20-hover.png"
+			},
+			{
+				"pagePath": "pages/mycart/mycart",
+				"text": "购物车",
+				"iconPath": "static/tabbar/t25.png",
+				"selectedIconPath": "static/tabbar/t25-hover.png"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "消息",
+				"iconPath": "static/tabbar/t14.png",
+				"selectedIconPath": "static/tabbar/t14-hover.png"
+			} 
+		]
+	}
+}
