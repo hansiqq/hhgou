@@ -4,7 +4,8 @@
     "pages/listing/listing",
     "pages/massage/massage",
     "pages/mycart/mycart",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/vip/vip"
   ],
   "subPackages": [],
   "window": {

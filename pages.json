@@ -3,7 +3,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "慧慧购"
 			}
 		},
 		{
@@ -17,8 +17,10 @@
 		},
 		{
 			"path": "pages/user/user"
+		},
+		{
+			"path": "pages/vip/vip"
 		}
-		
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

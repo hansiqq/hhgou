@@ -24,35 +24,129 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.index {
+  box-sizing: border-box;
+  /* 搜索框 */
+  /* 轮播图 */
+  /* 产品icon */
+}
 .index uni-nav-bar .uni-nav-bar.index-lf {
-  width: 56rpx;
-  height: 56rpx;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgEAYAAAAj6qa3AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAtRJREFUaN7tmb1LK0EUxe8do+QPEAkWYmFAbEURYptCXQIpVLDakCjERgtZI4KCoLJrCm1iscYsVqLFQoimsDUgKayVWPiFWNhYCCG6cy3MB7w0msQ37+n+urnszJxz2IXZuRiNRqPRaG8vRShCkVCIcpSjHGNQJziCIzjy9kb91E/9m5uKoRiKkct9dr4ma7Imu92YxSxmZ2fpiI7oyOGoW5cb3ejmnAZogAZ03WFJlmRJ4TBy5MiDQTiEQzisdxsAkkkmGYDu6I7ustmP6ucDgGEYhmGPh3qoh3qmpxuma43WaA2AfOQjX3MzaoqmaEoiAa3QCq2yzIf4EB/yeChFKUo9Pta6EfMzP/Pn8/Pd893z3Q8Pta6jXqgX6kV7Oze5yU2ns9Z1UEIJJZeLpVmapTMZeIIneDKMqlcK/ehH/+1t5CpyFbm6v6856gVYgIWaZ5epN8BykHE1rsYLBZiCKZiq1Ov+1v937ABECxCNHYBoAaKxAxAtQDQMwhCGcKFQLiyxJbZUGf8UqnwVfTd5n73P3ufLS+iDPug7P1cmlAllIpMRLbjRnJgn5on58uKd9E56J29urHFr3Brf3xety0Y0qKmaqqmjo+AEJzhXV3EGZ3CmqUm0sO+CtmiLtiwL8pCH/OIiI5100olEC/vrQfxS3zZ/gqWrp9INjDKmjCljhiFa2HehHWgH2oEswzEcw3Emw2AZlmF5bg6u4RquE4mNvY29jb22NtFCG03ZV9FnyTeDbdiG7ZaW0oN8ha/wlcr4p1Dlq+jb/hcQLUA0dgCiBYjGDkC0ANH8+gCqOkNkkklmR8d6aj21nqr9PPCvtcZIIokklwvTmMZ0pY4fG+zsYBKTmAwGG5dtkU7ohM5A4KtHbHVQHVQHAwH0oQ99u7uNlvXRHI3HHRjCEIZiMTzDMzx7ff2e9vjXr9iwC7uw6/QUDTTQiMUa3R6HJCQhqevv+PZk9sS3DeAAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDMtMDNUMTg6Mjg6MjIrMDg6MDAau6E8AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTAzLTAzVDE4OjI4OjIyKzA4OjAwa+YZgAAAAFB0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vaG9tZS9hZG1pbi9pY29uLWZvbnQvdG1wL2ljb25fb2o3Ym42eTZrdG8vcmljaHNjYW5faWNvbi5zdmc1v8lhAAAAAElFTkSuQmCC);
-  background-size: 56rpx;
+    width: 56rpx;
+    height: 56rpx;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgEAYAAAAj6qa3AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAASAAAAEgARslrPgAAAtRJREFUaN7tmb1LK0EUxe8do+QPEAkWYmFAbEURYptCXQIpVLDakCjERgtZI4KCoLJrCm1iscYsVqLFQoimsDUgKayVWPiFWNhYCCG6cy3MB7w0msQ37+n+urnszJxz2IXZuRiNRqPRaG8vRShCkVCIcpSjHGNQJziCIzjy9kb91E/9m5uKoRiKkct9dr4ma7Imu92YxSxmZ2fpiI7oyOGoW5cb3ejmnAZogAZ03WFJlmRJ4TBy5MiDQTiEQzisdxsAkkkmGYDu6I7ustmP6ucDgGEYhmGPh3qoh3qmpxuma43WaA2AfOQjX3MzaoqmaEoiAa3QCq2yzIf4EB/yeChFKUo9Pta6EfMzP/Pn8/Pd893z3Q8Pta6jXqgX6kV7Oze5yU2ns9Z1UEIJJZeLpVmapTMZeIIneDKMqlcK/ehH/+1t5CpyFbm6v6856gVYgIWaZ5epN8BykHE1rsYLBZiCKZiq1Ov+1v937ABECxCNHYBoAaKxAxAtQDQMwhCGcKFQLiyxJbZUGf8UqnwVfTd5n73P3ufLS+iDPug7P1cmlAllIpMRLbjRnJgn5on58uKd9E56J29urHFr3Brf3xety0Y0qKmaqqmjo+AEJzhXV3EGZ3CmqUm0sO+CtmiLtiwL8pCH/OIiI5100olEC/vrQfxS3zZ/gqWrp9INjDKmjCljhiFa2HehHWgH2oEswzEcw3Emw2AZlmF5bg6u4RquE4mNvY29jb22NtFCG03ZV9FnyTeDbdiG7ZaW0oN8ha/wlcr4p1Dlq+jb/hcQLUA0dgCiBYjGDkC0ANH8+gCqOkNkkklmR8d6aj21nqr9PPCvtcZIIokklwvTmMZ0pY4fG+zsYBKTmAwGG5dtkU7ohM5A4KtHbHVQHVQHAwH0oQ99u7uNlvXRHI3HHRjCEIZiMTzDMzx7ff2e9vjXr9iwC7uw6/QUDTTQiMUa3R6HJCQhqevv+PZk9sS3DeAAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDMtMDNUMTg6Mjg6MjIrMDg6MDAau6E8AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTAzLTAzVDE4OjI4OjIyKzA4OjAwa+YZgAAAAFB0RVh0c3ZnOmJhc2UtdXJpAGZpbGU6Ly8vaG9tZS9hZG1pbi9pY29uLWZvbnQvdG1wL2ljb25fb2o3Ym42eTZrdG8vcmljaHNjYW5faWNvbi5zdmc1v8lhAAAAAElFTkSuQmCC);
+    background-size: 56rpx;
 }
 .index uni-nav-bar .uni-nav-bar.index-rg {
-  width: 56rpx;
-  height: 56rpx;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABRCAMAAACdUboEAAAAPFBMVEUAAACioqKioqKioqKjo6OioqKfn5+fn5+fn5+jo6OioqKhoaGioqKioqKioqKhoaGioqKioqKjo6OioqLQyWHpAAAAE3RSTlMAf8A/QNAwIBCgYJBwsO/w4N9Q2DFCgQAAAbJJREFUWMPt1ttOw0AMBFDv0t1srr3M//8rG7Cb0gIh8SAh0XlopT4cqZrYsTzzh9OFxwzNfi+f8VmmvBcsE8AlA4AU7tPPv+4UI9DKY4ZKht1i+OL3qaGKzRFILz9Osy7KgE2ZQlkTpcW2pFVRwmkbGW5Ef5oEnKmiHAA8xV8Sc3CkRYXyB7FE+BPLjZjASCpXsQNwir6cqjFcxRGI4oohJp4ZnYcbsQA4uMVa+KiiPk7epIqZGIDkF+c/auIItG4wV7Ex8Tz37k0HHEXFRovxV23ihVJMtXoVVfdmAjoVVXemAZBVVJ2xIlVU3V9MMrHzF6PPtIk9EDkzaOL8wZlBEwFcKMUUFd/n0ZsBOImKb/PozlyGia27GJPsO7GKuZioJRFmUMWoJXmi60vFo5bkX44m1oyk5Wiivxh9r5hIKaaoYiL3fqxJwppBE1vhHCiLONCWo4kH2nI0UTgHyiJG4Rwoi9jTZtDEjjaDJmbSgbKIwlqOJkbiDNrbgXWgmHghHSiaPAYhzSA195NMO1AspOXIzOq1WLqwLT1WimmxPceyMvWbwSzfJcetCUWe+Yd5BcFLQeGbBrawAAAAAElFTkSuQmCC);
-  background-size: 56rpx;
+    width: 56rpx;
+    height: 56rpx;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABRCAMAAACdUboEAAAAPFBMVEUAAACioqKioqKioqKjo6OioqKfn5+fn5+fn5+jo6OioqKhoaGioqKioqKioqKhoaGioqKioqKjo6OioqLQyWHpAAAAE3RSTlMAf8A/QNAwIBCgYJBwsO/w4N9Q2DFCgQAAAbJJREFUWMPt1ttOw0AMBFDv0t1srr3M//8rG7Cb0gIh8SAh0XlopT4cqZrYsTzzh9OFxwzNfi+f8VmmvBcsE8AlA4AU7tPPv+4UI9DKY4ZKht1i+OL3qaGKzRFILz9Osy7KgE2ZQlkTpcW2pFVRwmkbGW5Ef5oEnKmiHAA8xV8Sc3CkRYXyB7FE+BPLjZjASCpXsQNwir6cqjFcxRGI4oohJp4ZnYcbsQA4uMVa+KiiPk7epIqZGIDkF+c/auIItG4wV7Ex8Tz37k0HHEXFRovxV23ihVJMtXoVVfdmAjoVVXemAZBVVJ2xIlVU3V9MMrHzF6PPtIk9EDkzaOL8wZlBEwFcKMUUFd/n0ZsBOImKb/PozlyGia27GJPsO7GKuZioJRFmUMWoJXmi60vFo5bkX44m1oyk5Wiivxh9r5hIKaaoYiL3fqxJwppBE1vhHCiLONCWo4kH2nI0UTgHyiJG4Rwoi9jTZtDEjjaDJmbSgbKIwlqOJkbiDNrbgXWgmHghHSiaPAYhzSA195NMO1AspOXIzOq1WLqwLT1WimmxPceyMvWbwSzfJcetCUWe+Yd5BcFLQeGbBrawAAAAAElFTkSuQmCC);
+    background-size: 56rpx;
 }
-.index swiper {
-  width: 100%;
-  height: 200rpx;
-}
-.index swiper swiper-item .swiper-item.index-bg1 {
+.index .top {
     width: 100%;
     height: 200rpx;
-    background-color: #007AFF;
 }
-.index swiper swiper-item .swiper-item.index-bg2 {
-    width: 100%;
-    height: 200rpx;
-    background-color: #4CD964;
+.index .top swiper-item .swiper-item.index-bg1 {
+      width: 100%;
+      height: 200rpx;
+      background-color: #007AFF;
 }
-.index swiper swiper-item .swiper-item.index-bg3 {
-    width: 100%;
-    height: 200rpx;
-    background-color: #F0AD4E;
+.index .top swiper-item .swiper-item.index-bg2 {
+      width: 100%;
+      height: 200rpx;
+      background-color: #4CD964;
 }
+.index .top swiper-item .swiper-item.index-bg3 {
+      width: 100%;
+      height: 200rpx;
+      background-color: #F0AD4E;
+}
+.index .nav {
+    position: relative;
+}
+.index .nav .middle {
+      height: 240rpx;
+}
+.index .nav .middle .swiper-item.index-bg4 {
+        height: 220rpx;
+        background-color: #fedcba;
+        margin: 20rpx;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+}
+.index .nav .middle .swiper-item.index-bg4 .swiper-item.icon {
+          width: 25%;
+          height: 110rpx;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          /* flex-direction: column; */
+          /* 上下对齐 */
+          position: relative;
+}
+.index .nav .middle .swiper-item.index-bg4 .swiper-item.icon image {
+            width: 48rpx;
+            height: 48rpx;
+            position: absolute;
+            top: 28%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+}
+.index .nav .middle .swiper-item.index-bg4 .swiper-item.icon text {
+            font-size: 20rpx;
+            /* text-align: center; */
+            position: absolute;
+            top: 68%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+}
+.index .nav .middle .swiper-item.index-bg5 {
+        height: 220rpx;
+        background-color: #abcdef;
+}
+.index .nav .dots {
+      position: absolute;
+      bottom: 20rpx;
+      left: 50%;
+      /* 这里一定要注意兼容不然很可能踩坑 */
+      transform: translate(-50%, 0);
+      -webkit-transform: translate(-50%, 0);
+      z-index: 99;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+}
+.index .nav .dots .dot {
+        width: 24rpx;
+        height: 8rpx;
+        -webkit-transition: all .6s;
+        transition: all .6s;
+        background: rgba(0, 0, 0, 0.3);
+        margin-right: 10rpx;
+}
+.index .nav .dots .active {
+        width: 24rpx;
+        height: 8rpx;
+        background: rgba(255, 255, 255, 0.8);
+}
+/* uni-swiper-dots.uni-swiper-dots-horizontal */
+/* uni-swiper .uni-swiper-dot-active */
+swiper .uni-swiper-dot {
+  width: 20rpx !important;
+  height: 80rpx !important;
+  border-radius: 50%;
+}
+/* uni-swiper .uni-swiper-dot */
 

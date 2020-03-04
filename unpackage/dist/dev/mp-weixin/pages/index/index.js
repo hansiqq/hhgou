@@ -147,7 +147,32 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniNavBar = function uniNavBar() {return __webpack_require__.e(/*! import() | components/uni-nav-bar/uni-nav-bar */ "components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/components/uni-nav-bar/uni-nav-bar.vue */ 47));};var uniSearchBar = function uniSearchBar() {return __webpack_require__.e(/*! import() | components/uni-search-bar/uni-search-bar */ "components/uni-search-bar/uni-search-bar").then(__webpack_require__.bind(null, /*! @/components/uni-search-bar/uni-search-bar.vue */ 72));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniNavBar = function uniNavBar() {return __webpack_require__.e(/*! import() | components/uni-nav-bar/uni-nav-bar */ "components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/components/uni-nav-bar/uni-nav-bar.vue */ 47));};var uniSearchBar = function uniSearchBar() {return __webpack_require__.e(/*! import() | components/uni-search-bar/uni-search-bar */ "components/uni-search-bar/uni-search-bar").then(__webpack_require__.bind(null, /*! @/components/uni-search-bar/uni-search-bar.vue */ 72));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -175,13 +200,23 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 {
   data: function data() {
-    return {};
+    return {
+      swiperCurrent: 0 };
 
   },
   onLoad: function onLoad() {
   },
   methods: {
     goCamera: function goCamera() {
+      uni.scanCode({
+        success: function success(res) {
+          console.log('条码类型：' + res.scanType);
+          console.log('条码内容：' + res.result);
+        } });
+
+    },
+    changeSwiper: function changeSwiper(e) {
+      this.swiperCurrent = e.detail.current;
     },
     goVip: function goVip() {
     },
@@ -197,6 +232,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   components: {
     uniNavBar: uniNavBar,
     uniSearchBar: uniSearchBar } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 21 */
