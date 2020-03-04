@@ -8772,6 +8772,17 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__30BCF05" };exports.default = _default;
 
+/***/ }),
+
+/***/ 88:
+/*!******************************************************************!*\
+  !*** C:/Users/aa/Desktop/线上商城/pages/index/json/producticon.json ***!
+  \******************************************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, default */
+/***/ (function(module) {
+
+module.exports = [{"name":"今日新品","image":"../../static/tabbar/porduct_icon/1.png"},{"name":"爆款商品","image":"../../static/tabbar/porduct_icon/2.png"},{"name":"境外优品","image":"../../static/tabbar/porduct_icon/3.png"},{"name":"慧慧超市","image":"../../static/tabbar/porduct_icon/4.png"},{"name":"充值中心","image":"../../static/tabbar/porduct_icon/5.png"},{"name":"旧物回收","image":"../../static/tabbar/porduct_icon/6.png"},{"name":"外卖到家","image":"../../static/tabbar/porduct_icon/7.png"},{"name":"免单试用","image":"../../static/tabbar/porduct_icon/8.png"},{"name":"司法拍卖","image":"../../static/tabbar/porduct_icon/9.png"},{"name":"鲜送达","image":"../../static/tabbar/porduct_icon/10.png"},{"name":"精品酒店","image":"../../static/tabbar/porduct_icon/11.png"}];
+
 /***/ })
 
 }]);

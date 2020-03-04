@@ -23,16 +23,15 @@
 		<!-- 产品icon -->
 		<view class="nav">
 			<swiper class="middle" :duration="500" :disable-touch="true" @change="changeSwiper">
-				<swiper-item>
+				<swiper-item v-for="(item1,index1) in 2" :key="index1">
+					<!-- swpiper-item这里 2应该写成 Math.ceil(producticon.lenght/8),但是会报错?--> 
 					<view class="swiper-item index-bg4">
-						<view class="swiper-item icon" v-for="(item,index) in 8" :key="index">
-							<image :src="'../../static/tabbar/porduct_icon/' + item +'.png'"></image>
-							<text>产品</text>
+						<view class="swiper-item icon" v-for="(item2,index2) in 8" :key="index2">
+							<image v-if="producticon[(index2 + swiperCurrent*8)].image" :src="producticon[(index2 + swiperCurrent*8)].image"></image>
+							<!-- image这里,可以写成 :src="'../../static/tabbar/porduct_icon/' + (item + swiperCurrent*8) +'.png'" -->
+							<text>{{producticon[(index2 + swiperCurrent*8)].name}}</text>
 						</view>
 					</view>
-				</swiper-item>
-				<swiper-item>
-					<view class="swiper-item index-bg5"></view>
 				</swiper-item>
 			</swiper>
 			 <!-- 轮播指示点样式修改 -->
@@ -47,12 +46,14 @@
 </template>
 
 <script>
+	import producticonJson from "./json/producticon.json"
 	import uniNavBar from "@/components/uni-nav-bar/uni-nav-bar.vue"
 	import uniSearchBar from '@/components/uni-search-bar/uni-search-bar.vue'
 	export default {
 		data() {
 			return {
 				swiperCurrent: 0,
+				producticon: producticonJson,
 			}
 		},
 		onLoad() {
@@ -138,6 +139,7 @@
 					height: 220rpx;
 					background-color: #fedcba;
 					margin: 20rpx;
+					padding: 10rpx 0;
 					display: flex;
 					flex-wrap: wrap;
 					.swiper-item.icon{
@@ -153,14 +155,15 @@
 							top: 28%;
 							left: 50%;
 							transform: translate(-50%,-50%);
+							-webkit-transform: translate(-50%,-50%);
 						}
 						text{
-							font-size: 20rpx;
-							/* text-align: center; */
+							font-size: 22rpx;
 							position: absolute;
 							top: 68%;
 							left: 50%;
 							transform: translate(-50%,-50%);
+							-webkit-transform: translate(-50%,-50%);
 						}
 					}
 				}
@@ -170,39 +173,30 @@
 				}
 			}
 			.dots {
-			          position: absolute;
-			          bottom: 20rpx;
-			          left: 50%;
-			           /* 这里一定要注意兼容不然很可能踩坑 */
-			          transform: translate(-50%, 0);
-			          -webkit-transform: translate(-50%, 0);        
-			          z-index: 99;
-			          display: flex;
-			          flex-direction: row;
-			          justify-content: center;
-			
-			          .dot {
-			              width: 24rpx;
-			              height: 8rpx;
-			              transition: all .6s;
-			              background: rgba(0, 0, 0, .3);
-			              margin-right: 10rpx;
-			          }
-			
-			          .active {
-			              width: 24rpx;
-			              height: 8rpx;
-			              background: rgba(255, 255, 255, .8);
-			          }
-			      }
+				position: absolute;
+				bottom: 10rpx;
+				left: 50%;
+				/* 这里一定要注意兼容不然很可能踩坑 */
+				transform: translate(-50%, 0);
+				-webkit-transform: translate(-50%, 0);        
+				z-index: 99;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				.dot {
+					width: 24rpx;
+					height: 8rpx;
+					transition: all .6s;
+					background: rgba(0, 0, 0, .3);
+					margin-right: 10rpx;
+				}
+				.active {
+					width: 24rpx;
+					height: 8rpx;
+					background: rgba(255, 255, 255, .8);
+				}
+			}
 		}
 	}
-	/* uni-swiper-dots.uni-swiper-dots-horizontal */
-	/* uni-swiper .uni-swiper-dot-active */
-	swiper .uni-swiper-dot{
-		width: 20rpx !important;
-		height: 80rpx !important;
-		border-radius: 50%;
-	}
-		/* uni-swiper .uni-swiper-dot */
+
 </style>

@@ -71,6 +71,7 @@
         height: 220rpx;
         background-color: #fedcba;
         margin: 20rpx;
+        padding: 10rpx 0;
         display: -webkit-box;
         display: -webkit-flex;
         display: flex;
@@ -93,17 +94,16 @@
             position: absolute;
             top: 28%;
             left: 50%;
+            transform: translate(-50%, -50%);
             -webkit-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
 }
 .index .nav .middle .swiper-item.index-bg4 .swiper-item.icon text {
-            font-size: 20rpx;
-            /* text-align: center; */
+            font-size: 22rpx;
             position: absolute;
             top: 68%;
             left: 50%;
+            transform: translate(-50%, -50%);
             -webkit-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
 }
 .index .nav .middle .swiper-item.index-bg5 {
         height: 220rpx;
@@ -111,7 +111,7 @@
 }
 .index .nav .dots {
       position: absolute;
-      bottom: 20rpx;
+      bottom: 10rpx;
       left: 50%;
       /* 这里一定要注意兼容不然很可能踩坑 */
       transform: translate(-50%, 0);
@@ -141,12 +141,4 @@
         height: 8rpx;
         background: rgba(255, 255, 255, 0.8);
 }
-/* uni-swiper-dots.uni-swiper-dots-horizontal */
-/* uni-swiper .uni-swiper-dot-active */
-swiper .uni-swiper-dot {
-  width: 20rpx !important;
-  height: 80rpx !important;
-  border-radius: 50%;
-}
-/* uni-swiper .uni-swiper-dot */
 

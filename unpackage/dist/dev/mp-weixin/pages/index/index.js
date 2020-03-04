@@ -147,7 +147,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniNavBar = function uniNavBar() {return __webpack_require__.e(/*! import() | components/uni-nav-bar/uni-nav-bar */ "components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/components/uni-nav-bar/uni-nav-bar.vue */ 47));};var uniSearchBar = function uniSearchBar() {return __webpack_require__.e(/*! import() | components/uni-search-bar/uni-search-bar */ "components/uni-search-bar/uni-search-bar").then(__webpack_require__.bind(null, /*! @/components/uni-search-bar/uni-search-bar.vue */ 72));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -195,43 +195,54 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-{
-  data: function data() {
-    return {
-      swiperCurrent: 0 };
-
-  },
-  onLoad: function onLoad() {
-  },
-  methods: {
-    goCamera: function goCamera() {
-      uni.scanCode({
-        success: function success(res) {
-          console.log('条码类型：' + res.scanType);
-          console.log('条码内容：' + res.result);
-        } });
-
-    },
-    changeSwiper: function changeSwiper(e) {
-      this.swiperCurrent = e.detail.current;
-    },
-    goVip: function goVip() {
-    },
-    input: function input() {
-    },
-    search: function search() {
-    },
-    goLinks: function goLinks() {
-    },
-    searchClick: function searchClick() {
-    } },
-
-  components: {
-    uniNavBar: uniNavBar,
-    uniSearchBar: uniSearchBar } };exports.default = _default;
+var _producticon = _interopRequireDefault(__webpack_require__(/*! ./json/producticon.json */ 88));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var uniNavBar = function uniNavBar() {return __webpack_require__.e(/*! import() | components/uni-nav-bar/uni-nav-bar */ "components/uni-nav-bar/uni-nav-bar").then(__webpack_require__.bind(null, /*! @/components/uni-nav-bar/uni-nav-bar.vue */ 47));};var uniSearchBar = function uniSearchBar() {return __webpack_require__.e(/*! import() | components/uni-search-bar/uni-search-bar */ "components/uni-search-bar/uni-search-bar").then(__webpack_require__.bind(null, /*! @/components/uni-search-bar/uni-search-bar.vue */ 72));};var _default = { data: function data() {return { swiperCurrent: 0, producticon: _producticon.default };}, onLoad: function onLoad() {}, methods: { goCamera: function goCamera() {uni.scanCode({ success: function success(res) {console.log('条码类型：' + res.scanType);console.log('条码内容：' + res.result);} });}, changeSwiper: function changeSwiper(e) {this.swiperCurrent = e.detail.current;}, goVip: function goVip() {}, input: function input() {}, search: function search() {}, goLinks: function goLinks() {}, searchClick: function searchClick() {} }, components: { uniNavBar: uniNavBar, uniSearchBar: uniSearchBar } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
