@@ -5,7 +5,8 @@
     "pages/massage/massage",
     "pages/mycart/mycart",
     "pages/user/user",
-    "pages/vip/vip"
+    "pages/vip/vip",
+    "pages/indexnavdetail/indexnavdetail"
   ],
   "subPackages": [],
   "window": {

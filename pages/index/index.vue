@@ -26,11 +26,13 @@
 				<swiper-item v-for="(item1,index1) in 2" :key="index1">
 					<!-- swpiper-item这里 2应该写成 Math.ceil(producticon.lenght/8),但是会报错?--> 
 					<view class="swiper-item index-bg4">
-						<view class="swiper-item icon" v-for="(item2,index2) in 8" :key="index2">
+						<navigator class="swiper-item icon" v-for="(item2,index2) in 8" :key="index2"
+							url="../indexnavdetail/indexnavdetail"
+						>
 							<image v-if="producticon[(index2 + swiperCurrent*8)].image" :src="producticon[(index2 + swiperCurrent*8)].image"></image>
 							<!-- image这里,可以写成 :src="'../../static/tabbar/porduct_icon/' + (item + swiperCurrent*8) +'.png'" -->
 							<text>{{producticon[(index2 + swiperCurrent*8)].name}}</text>
-						</view>
+						</navigator>
 					</view>
 				</swiper-item>
 			</swiper>
@@ -134,17 +136,18 @@
 		.nav{
 			position: relative;
 			.middle {
-				height: 240rpx;
+				height: 260rpx;
 				.swiper-item.index-bg4{
 					height: 220rpx;
 					background-color: #fedcba;
-					margin: 20rpx;
-					padding: 10rpx 0;
+					margin: 10rpx 20rpx;
+					padding: 20rpx 0 0;
+					border-radius: 10rpx;
 					display: flex;
 					flex-wrap: wrap;
 					.swiper-item.icon{
 						width: 25%;
-						height: 110rpx;
+						height: 100rpx;
 						display: flex;
 						/* flex-direction: column; *//* 上下对齐 */
 						position: relative;
@@ -174,7 +177,7 @@
 			}
 			.dots {
 				position: absolute;
-				bottom: 10rpx;
+				bottom: 20rpx;
 				left: 50%;
 				/* 这里一定要注意兼容不然很可能踩坑 */
 				transform: translate(-50%, 0);
