@@ -1,1 +1,1 @@
-<view>indexnavdetail</view>
+<view class="indexnavdetail">{{''+indexnavdetailId+''}}</view>

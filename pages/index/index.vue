@@ -10,24 +10,26 @@
 		</uni-nav-bar>
 		<!-- 轮播图 -->
 		<swiper class="top" :interval="3000" :duration="true" indicator-active-color="#ffffff" :circular="true" :disable-touch="true" :indicator-dots="true" :autoplay="true">
-			<swiper-item>
-				<view class="swiper-item index-bg1" @click="goLinks()"></view>
+			<swiper-item v-for="(item,topindex) in swiperList" :key="topindex">
+				<navigator class="swiper-item index-bg1" :url="'../indextopdetail/indextopdetail?item=' + JSON.stringify(item)">
+					<image :src="item.img" style="width: 100%;"></image>
+				</navigator>
 			</swiper-item>
-			<swiper-item>
+			<!-- <swiper-item>
 				<view class="swiper-item index-bg2" @click="goLinks()"></view>
 			</swiper-item>
 			<swiper-item>
 				<view class="swiper-item index-bg3" @click="goLinks()"></view>
-			</swiper-item>
+			</swiper-item> -->
 		</swiper>
 		<!-- 产品icon -->
 		<view class="nav">
 			<swiper class="middle" :duration="500" :disable-touch="true" @change="changeSwiper">
 				<swiper-item v-for="(item1,index1) in 2" :key="index1">
 					<!-- swpiper-item这里 2应该写成 Math.ceil(producticon.lenght/8),但是会报错?--> 
-					<view class="swiper-item index-bg4">
+					<view class="swiper-item index-bg2">
 						<navigator class="swiper-item icon" v-for="(item2,index2) in 8" :key="index2"
-							url="../indexnavdetail/indexnavdetail"
+							:url="'../indexnavdetail/indexnavdetail?id=' + producticon[(index2 + swiperCurrent*8)].id"
 						>
 							<image v-if="producticon[(index2 + swiperCurrent*8)].image" :src="producticon[(index2 + swiperCurrent*8)].image"></image>
 							<!-- image这里,可以写成 :src="'../../static/tabbar/porduct_icon/' + (item + swiperCurrent*8) +'.png'" -->
@@ -44,18 +46,41 @@
 			  </view>
 		</view>
 		
+		<!-- 3d轮播 -->
+		<!-- #ifdef H5 -->
+		<!-- <view class="threed">
+			<bw-img-upload style="width:100%"></bw-img-upload>
+			<bw-swiper :swiperList="swiperList" style="width:710rpx" displayMultipleItems="3"
+				
+				swiperType="true"
+			></bw-swiper>
+		</view> -->
+		<!-- #endif -->
+		
+
+
+		
 	</view>
 </template>
 
 <script>
 	import producticonJson from "./json/producticon.json"
 	import uniNavBar from "@/components/uni-nav-bar/uni-nav-bar.vue"
-	import uniSearchBar from '@/components/uni-search-bar/uni-search-bar.vue'
+	import uniSearchBar from "@/components/uni-search-bar/uni-search-bar.vue"
+	// import bwSwiper from '@/components/bw-swiper/bw-swiper.vue'
+	
 	export default {
 		data() {
 			return {
 				swiperCurrent: 0,
 				producticon: producticonJson,
+				swiperList:[ // 滑块视图容器数据 
+				    // 数据格式 :imageKey="xx" :textKey="yy" [{xx: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg',yy:'加油'}] 提示文字可要可不要
+				    // 或者 [{img: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg',text:'加油'}] 提示文字可要可不要, 同时数据要把大括号改成中括号
+					{img: '../../static/tabbar/bar/1.png',text:'1'},
+					{img: '../../static/tabbar/bar/2.png',text:'2'},
+					{img: '../../static/tabbar/bar/3.png',text:'3'}
+				],
 			}
 		},
 		onLoad() {
@@ -78,14 +103,13 @@
 			},
 			search(){
 			},
-			goLinks(){
-			},
 			searchClick(){
 			}
 		},
 		components: {
 			uniNavBar,
-			uniSearchBar
+			uniSearchBar,
+			// bwSwiper
 		}
 	}
 </script>
@@ -117,17 +141,6 @@
 				.swiper-item.index-bg1 {
 					width: 100%;
 					height: 200rpx;
-					background-color: #007AFF;
-				}
-				.swiper-item.index-bg2 {
-					width: 100%;
-					height: 200rpx;
-					background-color: #4CD964;
-				}
-				.swiper-item.index-bg3 {
-					width: 100%;
-					height: 200rpx;
-					background-color: #F0AD4E;
 				}
 			}
 		}
@@ -137,7 +150,7 @@
 			position: relative;
 			.middle {
 				height: 260rpx;
-				.swiper-item.index-bg4{
+				.swiper-item.index-bg2{
 					height: 220rpx;
 					background-color: #fedcba;
 					margin: 10rpx 20rpx;
@@ -200,6 +213,14 @@
 				}
 			}
 		}
+		
+		/* 3d */
+		.threed{
+			margin: 10rpx 20rpx;
+		}
+	
+	
+	
 	}
 
 </style>

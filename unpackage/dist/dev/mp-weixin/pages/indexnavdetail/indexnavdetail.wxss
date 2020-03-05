@@ -1,0 +1,7 @@
+
+.indexnavdetail{
+	font-size: 80rpx;
+	color: #007AFF;
+	text-align: center;
+}
+

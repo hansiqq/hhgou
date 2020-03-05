@@ -23,6 +23,9 @@
 		},
 		{
 			"path": "pages/indexnavdetail/indexnavdetail"
+		},
+		{
+			"path": "pages/indextopdetail/indextopdetail"
 		}
 	],
 	"globalStyle": {

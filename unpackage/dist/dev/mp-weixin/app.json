@@ -6,7 +6,8 @@
     "pages/mycart/mycart",
     "pages/user/user",
     "pages/vip/vip",
-    "pages/indexnavdetail/indexnavdetail"
+    "pages/indexnavdetail/indexnavdetail",
+    "pages/indextopdetail/indextopdetail"
   ],
   "subPackages": [],
   "window": {

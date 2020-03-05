@@ -7703,6 +7703,17 @@ internalMixin(Vue);
 
 /***/ }),
 
+/***/ 21:
+/*!******************************************************************!*\
+  !*** C:/Users/aa/Desktop/线上商城/pages/index/json/producticon.json ***!
+  \******************************************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, default */
+/***/ (function(module) {
+
+module.exports = [{"id":1,"name":"今日新品","image":"../../static/tabbar/porduct_icon/1.png"},{"id":2,"name":"爆款商品","image":"../../static/tabbar/porduct_icon/2.png"},{"id":3,"name":"境外优品","image":"../../static/tabbar/porduct_icon/3.png"},{"id":4,"name":"慧慧超市","image":"../../static/tabbar/porduct_icon/4.png"},{"id":5,"name":"充值中心","image":"../../static/tabbar/porduct_icon/5.png"},{"id":6,"name":"旧物回收","image":"../../static/tabbar/porduct_icon/6.png"},{"id":7,"name":"外卖到家","image":"../../static/tabbar/porduct_icon/7.png"},{"id":8,"name":"免单试用","image":"../../static/tabbar/porduct_icon/8.png"},{"id":9,"name":"司法拍卖","image":"../../static/tabbar/porduct_icon/9.png"},{"id":10,"name":"鲜送达","image":"../../static/tabbar/porduct_icon/10.png"},{"id":11,"name":"精品酒店","image":"../../static/tabbar/porduct_icon/11.png"}];
+
+/***/ }),
+
 /***/ 3:
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -8644,7 +8655,31 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 
 /***/ }),
 
-/***/ 66:
+/***/ 7:
+/*!************************************************************!*\
+  !*** C:/Users/aa/Desktop/线上商城/pages.json?{"type":"style"} ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "慧慧购", "usingComponents": { "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar", "uni-search-bar": "/components/uni-search-bar/uni-search-bar" }, "usingAutoImportComponents": { "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar", "uni-search-bar": "/components/uni-search-bar/uni-search-bar" } }, "pages/listing/listing": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/massage/massage": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/mycart/mycart": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/user/user": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/vip/vip": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/indexnavdetail/indexnavdetail": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/indextopdetail/indextopdetail": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+
+/***/ }),
+
+/***/ 8:
+/*!***********************************************************!*\
+  !*** C:/Users/aa/Desktop/线上商城/pages.json?{"type":"stat"} ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__30BCF05" };exports.default = _default;
+
+/***/ }),
+
+/***/ 88:
 /*!**************************************************************!*\
   !*** C:/Users/aa/Desktop/线上商城/components/uni-icons/icons.js ***!
   \**************************************************************/
@@ -8747,41 +8782,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   'closefill': "\uE589",
   'sound': "\uE590",
   'scan': "\uE612" };exports.default = _default;
-
-/***/ }),
-
-/***/ 7:
-/*!************************************************************!*\
-  !*** C:/Users/aa/Desktop/线上商城/pages.json?{"type":"style"} ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "慧慧购", "usingComponents": { "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar", "uni-search-bar": "/components/uni-search-bar/uni-search-bar" }, "usingAutoImportComponents": { "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar", "uni-search-bar": "/components/uni-search-bar/uni-search-bar" } }, "pages/listing/listing": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/massage/massage": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/mycart/mycart": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/user/user": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/vip/vip": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/indexnavdetail/indexnavdetail": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
-
-/***/ }),
-
-/***/ 8:
-/*!***********************************************************!*\
-  !*** C:/Users/aa/Desktop/线上商城/pages.json?{"type":"stat"} ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__30BCF05" };exports.default = _default;
-
-/***/ }),
-
-/***/ 88:
-/*!******************************************************************!*\
-  !*** C:/Users/aa/Desktop/线上商城/pages/index/json/producticon.json ***!
-  \******************************************************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, default */
-/***/ (function(module) {
-
-module.exports = [{"name":"今日新品","image":"../../static/tabbar/porduct_icon/1.png"},{"name":"爆款商品","image":"../../static/tabbar/porduct_icon/2.png"},{"name":"境外优品","image":"../../static/tabbar/porduct_icon/3.png"},{"name":"慧慧超市","image":"../../static/tabbar/porduct_icon/4.png"},{"name":"充值中心","image":"../../static/tabbar/porduct_icon/5.png"},{"name":"旧物回收","image":"../../static/tabbar/porduct_icon/6.png"},{"name":"外卖到家","image":"../../static/tabbar/porduct_icon/7.png"},{"name":"免单试用","image":"../../static/tabbar/porduct_icon/8.png"},{"name":"司法拍卖","image":"../../static/tabbar/porduct_icon/9.png"},{"name":"鲜送达","image":"../../static/tabbar/porduct_icon/10.png"},{"name":"精品酒店","image":"../../static/tabbar/porduct_icon/11.png"}];
 
 /***/ })
 
