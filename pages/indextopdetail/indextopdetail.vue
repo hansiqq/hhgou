@@ -1,6 +1,7 @@
 <template>
 	<view class="indextopdetail">
-		{{indextopdetailItem.img}}
+		<!-- {{indextopdetailItem.img}} -->
+		<image :src="indextopdetailItem.img"></image>
 		
 	</view>
 </template>

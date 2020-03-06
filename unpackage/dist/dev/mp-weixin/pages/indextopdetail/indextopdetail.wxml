@@ -1,1 +1,1 @@
-<view class="indextopdetail">{{''+indextopdetailItem.img+''}}</view>
+<view class="indextopdetail"><image src="{{indextopdetailItem.img}}"></image></view>

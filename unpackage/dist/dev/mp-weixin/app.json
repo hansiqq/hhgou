@@ -6,7 +6,7 @@
     "pages/mycart/mycart",
     "pages/user/user",
     "pages/vip/vip",
-    "pages/indexnavdetail/indexnavdetail",
+    "pages/indexnavdetail/index/home",
     "pages/indextopdetail/indextopdetail"
   ],
   "subPackages": [],
@@ -50,5 +50,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap91.json"
 }

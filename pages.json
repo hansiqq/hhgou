@@ -22,7 +22,7 @@
 			"path": "pages/vip/vip"
 		},
 		{
-			"path": "pages/indexnavdetail/indexnavdetail"
+			"path": "pages/indexnavdetail/index/home"
 		},
 		{
 			"path": "pages/indextopdetail/indextopdetail"

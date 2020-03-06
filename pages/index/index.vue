@@ -1,5 +1,6 @@
 <template>
 	<view class="index">	
+	
 		<!-- 搜索框 -->
 		<uni-nav-bar @clickLeft="goCamera" @clickRight="goVip">
 			<view class="uni-nav-bar index-lf" slot="left"></view>
@@ -8,6 +9,7 @@
 				@confirm="search" @input="input" ></uni-search-bar>
 			<navigator class="uni-nav-bar index-rg" slot="right" url="../vip/vip"></navigator>	
 		</uni-nav-bar>
+		
 		<!-- 轮播图 -->
 		<swiper class="top" :interval="3000" :duration="true" indicator-active-color="#ffffff" :circular="true" :disable-touch="true" :indicator-dots="true" :autoplay="true">
 			<swiper-item v-for="(item,topindex) in swiperList" :key="topindex">
@@ -15,13 +17,8 @@
 					<image :src="item.img" style="width: 100%;"></image>
 				</navigator>
 			</swiper-item>
-			<!-- <swiper-item>
-				<view class="swiper-item index-bg2" @click="goLinks()"></view>
-			</swiper-item>
-			<swiper-item>
-				<view class="swiper-item index-bg3" @click="goLinks()"></view>
-			</swiper-item> -->
 		</swiper>
+		
 		<!-- 产品icon -->
 		<view class="nav">
 			<swiper class="middle" :duration="500" :disable-touch="true" @change="changeSwiper">
@@ -29,7 +26,7 @@
 					<!-- swpiper-item这里 2应该写成 Math.ceil(producticon.lenght/8),但是会报错?--> 
 					<view class="swiper-item index-bg2">
 						<navigator class="swiper-item icon" v-for="(item2,index2) in 8" :key="index2"
-							:url="'../indexnavdetail/indexnavdetail?id=' + producticon[(index2 + swiperCurrent*8)].id"
+							:url="'../indexnavdetail/index/home?id=' + producticon[(index2 + swiperCurrent*8)].id"
 						>
 							<image v-if="producticon[(index2 + swiperCurrent*8)].image" :src="producticon[(index2 + swiperCurrent*8)].image"></image>
 							<!-- image这里,可以写成 :src="'../../static/tabbar/porduct_icon/' + (item + swiperCurrent*8) +'.png'" -->
