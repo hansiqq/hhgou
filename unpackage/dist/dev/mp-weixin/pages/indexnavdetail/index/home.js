@@ -136,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var goodsList = function goodsList() {return __webpack_require__.e(/*! import() | components/goodsList/goodslist */ "components/goodsList/goodslist").then(__webpack_require__.bind(null, /*! ../../../components/goodsList/goodslist.vue */ 91));};var uniLoadMore = function uniLoadMore() {return __webpack_require__.e(/*! import() | components/uni-load-more/uni-load-more */ "components/uni-load-more/uni-load-more").then(__webpack_require__.bind(null, /*! ../../../components/uni-load-more/uni-load-more.vue */ 84));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var goodsList = function goodsList() {return __webpack_require__.e(/*! import() | components/goodsList/goodslist */ "components/goodsList/goodslist").then(__webpack_require__.bind(null, /*! ../../../components/goodsList/goodslist.vue */ 91));};var uniLoadMore = function uniLoadMore() {return __webpack_require__.e(/*! import() | components/uni-load-more/uni-load-more */ "components/uni-load-more/uni-load-more").then(__webpack_require__.bind(null, /*! ../../../components/uni-load-more/uni-load-more.vue */ 84));};var _default =
 
 
 
@@ -358,6 +358,12 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   },
   methods: {
 
+    //跳轉詳情頁
+    goGoodsdetail: function goGoodsdetail() {
+      uni.navigateBack({
+        url: '../indexnavdetail.vue' });
+
+    },
     changeSwiper: function changeSwiper(e) {
       this.currentSwiper = e.detail.current;
     },
@@ -410,6 +416,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       }
       this.Promotion = tmpPromotion;
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

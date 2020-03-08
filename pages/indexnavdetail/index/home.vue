@@ -54,7 +54,7 @@
 				<view class="line"></view>
 			</view>
 			<view class="goodsBox">
-				<goods-list :goodsList="goodsList"></goods-list>
+				<goods-list :goodsList="goodsList" @change="goGoodsdetail"></goods-list>
 			</view>
 		</view>
 		<!-- 加载更多 -->
@@ -219,7 +219,13 @@
 			this.goodsList = this.goodsList.concat(this.goodsList);
 		},
 		methods: {
-
+			
+			//跳轉詳情頁
+			goGoodsdetail(){
+				uni.navigateBack({
+					url: '../indexnavdetail.vue'
+				})
+			},
 			changeSwiper(e) {
 				this.currentSwiper = e.detail.current;
 			},
